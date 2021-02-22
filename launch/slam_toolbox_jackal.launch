@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="slam_toolbox" type="sync_slam_toolbox_node" name="slam_toolbox" output="screen">
+    <rosparam command="load" file="$(find jackal_noetic_bringup)/config/mapper_params_online_sync.yaml" />
+  </node>
+
+  <include file="$(find jackal_noetic_bringup)/launch/move_base_jackal.launch" />
+  <include file="$(find jackal_base)/launch/base.launch" />
+</launch>
