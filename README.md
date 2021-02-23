@@ -1,2 +1,2 @@
-# CLEARPATH JACKAL ROS NOETIC BRINGUP
+# Clearpath Jackal ROS Noetic Bringup
 
