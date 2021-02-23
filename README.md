@@ -90,7 +90,13 @@ Add this file to Jackal's ~/.bashrc:
 Add this file to remote pc's ~/.bashrc:
 * [setup_laptop.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_laptop.bash)
 * #### Note: Remeber to source those files whenever you open a new terminal(source setup_jackal if on jackal, source setup_laptop if on remote pc)
-#### 7. 
+#### 7. Final setup for Jackal specifics
+Those are key steps to get Jackal up and running by setting up all undocumented intricates implemented by Clearpath on a Jacakl image.
+
+* udev rules
+Add this file to Jackal. Copying the rules into /etc/udev/rules.d foler on Jackal. Restart the Jackal to let it take affect.
+* #### Note: If this file is not present or not working, the Jackal will not find the motor control board in the /dev folder. 
+
 
 
 
