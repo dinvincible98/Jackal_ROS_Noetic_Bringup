@@ -133,8 +133,7 @@ On Jackal:
       Include base.launch in your launch file as shown in [slam_toolbox_jackal.launch](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/launch/slam_toolbox_jackal.launch)
 
 
-
-
+## Starting the Jackal
       
 
 
