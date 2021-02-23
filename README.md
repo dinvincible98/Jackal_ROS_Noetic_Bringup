@@ -133,8 +133,17 @@ On Jackal:
       Include base.launch in your launch file as shown in [slam_toolbox_jackal.launch](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/launch/slam_toolbox_jackal.launch)
 
 
-## Starting the Jackal
+## Starting the Jackal(Northwestern MSR Lab)
+* Turn on the jackal then remember to press the small red button.
+* Connect remote pc to MSR jackal router
+* SSH into Jackal (ssh jackal@jackal-desktop)
+* In every new terminal on the jackal source setuop_jackal.bash
+* In every new terminal on the jackal source setup_laptop.bash
+* On jackal terminal:
       
+      roslaunch jackal_noetic_bringup
+
+
 
 
 
