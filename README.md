@@ -87,6 +87,7 @@ Build those pkgs follow the previous instructions, then you can follow the offic
 To let your Jackal and PC share a ROS master, you need to set up ROS_MASTER_URI and ROS_HOSTNAME environment on both Jackal and remote pc.
 Add this file to Jackal's ~/.bashrc:
 * [setup_jackal.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_jackal.bash)
+
 Add this file to remote pc's ~/.bashrc:
 * [setup_laptop.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_laptop.bash)
 * #### Note: Remeber to source those files whenever you open a new terminal(source setup_jackal if on jackal, source setup_laptop if on remote pc)
@@ -104,11 +105,9 @@ Required packages:
 
 Use sudo apt-get install  
 * ros-noetic-velodyne-pointcloud
-
-This package contains nodes to read the poincloud data from the velodyne and publish it to the relevant ROS topics.
+** This package contains nodes to read the poincloud data from the velodyne and publish it to the relevant ROS topics.
 * ros-noetic-pointcloud-to-laserscan
-
-This package contains a node to convert 3D point cloud data to a single layer laserscan, which is useful for gmapping or slam_toolbox
+** This package contains a node to convert 3D point cloud data to a single layer laserscan, which is useful for gmapping or slam_toolbox
 
 * PS3 remote setup
 I have not done set up PS3 controller since there are some intractable porblems due to verison problems.  I skipped this part because it is not necessary for my project. However, it is better to set it up for safety concern.
