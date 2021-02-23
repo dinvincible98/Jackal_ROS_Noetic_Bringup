@@ -58,6 +58,12 @@ Below are packages need to built from source:
 * [openslam_gmapping](https://github.com/ros-perception/openslam_gmapping)
 * [slam_gmapping](https://github.com/ros-perception/slam_gmapping)
 
+Below are packages released for ROS Noetic:
+
+Use sudo apt-get install
+* slam_toolbox
+* nmea_msgs
+
 In order to build those pkgs from source:
 * Create a catkin workspace on Jackal
             
@@ -124,7 +130,7 @@ Add this line:
       $ source ~jackal_ws/devel/setup.bash
 
 On Jackal:
-      Include base.launch in your launch file as shown in [slam_toolbox_jackal.launch]
+      Include base.launch in your launch file as shown in [slam_toolbox_jackal.launch](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/launch/slam_toolbox_jackal.launch)
 
       
 
