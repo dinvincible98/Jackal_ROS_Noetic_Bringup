@@ -44,7 +44,18 @@ host file on your remote pc:
 #### 3. Installing ROS Noetic
 * Install ROS Noetic on both of your remoet pc and Jackal. Follow the insturctions [here](http://wiki.ros.org/noetic/Installation/Ubuntu).
 * I recommended to install Desktop-Full Install as shown on the instructions.
-#### 4. 
+#### 4. Building packages and dependencies on Jackal
+Since many packages for Jackal written by Clearpath aren't released for ROS noetic so they need to be built from source.
+
+Below are packages need to built from source:
+* [jackal](https://github.com/jackal/jackal)
+* [jackal_robot](https://github.com/jackal/jackal_robot)
+* [interactive_marker_twist_sevrer](https://github.com/ros-visualization/interactive_marker_twist_server)
+* [LMS1xx](https://github.com/clearpathrobotics/lms1xx)
+* [ndt_omp](https://github.com/koide3/ndt_omp)
+* [rosserial](https://github.com/ros-drivers/rosserial)
+* [openslam_gmapping](https://github.com/ros-perception/openslam_gmapping)
+* [slam_gmapping](https://github.com/ros-perception/slam_gmapping)
 
 
 
