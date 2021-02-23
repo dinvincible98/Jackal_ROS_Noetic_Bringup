@@ -123,6 +123,8 @@ Add this line:
       
       $ source ~jackal_ws/devel/setup.bash
 
+On Jackal:
+      Include base.launch in your launch file as shown in [slam_toolbox_jackal.launch]
 
       
 
