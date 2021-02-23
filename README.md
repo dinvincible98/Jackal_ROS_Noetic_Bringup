@@ -41,11 +41,9 @@ host file on your remote pc:
 
 * Restart your network manager or your whole pc for changes to take affect.
 * Connect to the router and try to ping jackal or SSHing to check if the setup works.
-
 #### 3. Installing ROS Noetic
 * Install ROS Noetic on both of your remoet pc and Jackal. Follow the insturctions [here](http://wiki.ros.org/noetic/Installation/Ubuntu).
 * I recommended to install Desktop-Full Install as shown on the instructions.
-
 #### 4. 
 
 
