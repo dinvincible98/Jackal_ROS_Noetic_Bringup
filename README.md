@@ -41,6 +41,7 @@ host file on your remote pc:
 
 * Restart your network manager or your whole pc for changes to take affect.
 * Connect to the router and try to ping jackal or SSHing to check if the setup works.
+* #### Note: You need to install openssh_server(run ### sudo apt-get install openssh_server) for ssh to let it work.
 #### 3. Installing ROS Noetic
 * Install ROS Noetic on both of your remoet pc and Jackal. Follow the insturctions [here](http://wiki.ros.org/noetic/Installation/Ubuntu).
 * I recommended to install Desktop-Full Install as shown on the instructions.
@@ -56,6 +57,19 @@ Below are packages need to built from source:
 * [rosserial](https://github.com/ros-drivers/rosserial)
 * [openslam_gmapping](https://github.com/ros-perception/openslam_gmapping)
 * [slam_gmapping](https://github.com/ros-perception/slam_gmapping)
+
+In order to build those pkgs from source:
+* Create a catkin workspace on Jackal
+            
+      $ mkdir -p ~/jackal_ws/src
+      $ cd jackal_ws
+      $ catkin_make
+
+* git clone above pkgs into /src directory of the workspace
+* Install all required dependencies
+
+      $ cd jackal_ws
+      $ rosdep install --from-paths src --ignore-src -r -y
 
 
 
