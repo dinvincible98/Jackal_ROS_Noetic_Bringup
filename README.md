@@ -92,12 +92,12 @@ Build those pkgs follow the previous instructions, then you can follow the offic
 #### 6. Setting up ROS between Jackal and remote PC
 To let your Jackal and PC share a ROS master, you need to set up ROS_MASTER_URI and ROS_HOSTNAME environment on both Jackal and remote pc.
 
-Add this file to Jackal's ~/.bashrc:
+Add this file to Jackal:
 * [setup_jackal.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_jackal.bash)
 
-Add this file to remote pc's ~/.bashrc:
+Add this file to remote pc:
 * [setup_laptop.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_laptop.bash)
-* #### Note: Remeber to source those files whenever you open a new terminal(source setup_jackal if on jackal, source setup_laptop if on remote pc)
+* #### Important note: Remeber to source those files whenever you open a new terminal(source setup_jackal.bash if on jackal, source setup_laptop.bash if on remote pc). Or you can add those two files to each's ~/.bashrc if you think it is more conveninent(However if you are not only using Jackal, this way is not recommended).
 #### 7. Final setup for Jackal specifics
 Those are key steps to get Jackal up and running by setting up all undocumented intricates implemented by Clearpath on a Jacakl image.
 
@@ -131,6 +131,9 @@ Add this line:
 
 On Jackal:
       Include base.launch in your launch file as shown in [slam_toolbox_jackal.launch](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/launch/slam_toolbox_jackal.launch)
+
+
+
 
       
 
