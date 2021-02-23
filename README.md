@@ -25,8 +25,31 @@ I used router in Northwestern MSR Lab and it is already set up, below are steps 
 * Check that this has worked by connecting to the WiFi and running ifconfig and checking that the IP address of your wireless network interface is what you set it as.
 * To allow for easy hostname resolution, you will want to add these new static IP addresses to the top of your /etc/hosts file.
 
-e.g:
-*** ahdkadh
+      <STATIC_IP>    <HOSTNAME>
+
+For example, on jackal, your host file should looks like this:
+
+    127.0.0.1       localhost
+    127.0.1.1       jackal-desktop
+    192.168.0.101   dinvincible98
+
+host file on your remote pc:
+
+    127.0.0.1       localhost
+    127.0.1.1       dinvincible98
+    192.168.0.100   jackal-desktop
+
+* Restart your network manager or your whole pc for changes to take affect.
+* Connect to the router and try to ping jackal or SSHing to check if the setup works.
+
+
+
+
+    
+
+
+    
+             
  
 
 
