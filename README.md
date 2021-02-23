@@ -108,10 +108,24 @@ Use sudo apt-get install
 * ros-noetic-velodyne-pointcloud (This package contains nodes to read the poincloud data from the velodyne and publish it to the relevant ROS topics.)
 * ros-noetic-pointcloud-to-laserscan (This package contains a node to convert 3D point cloud data to a single layer laserscan, which is useful for gmapping and slam_toolbox.)
 
-To publish pointcloud data to a topic, VLP16_point.launch can be used. See [velodyne.launch]() file in the repo.
+To publish pointcloud data to a topic, VLP16_point.launch can be used. See [velodyne.launch](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/launch/velodyne.launch) file in the repo.
 
 * #### PS3 remote setup
 I have not done set up PS3 controller since there are some intractable porblems due to verison problems.  I skipped this part because it is not necessary for my project. However, it is better to set it up for safety concern.
+
+* #### Setup boot procedure
+Based on Jordan's [instruction](https://github.com/robo-jordo/jackal_melodic_bringup), there are two sevices and two executable file for Jackal so jackal will automatically be prepared to run when powered on. However, I encountered some system errors due to version when I tried to add those files and they cannot execute. Basically, those two executable files source the jackal_ws, bring up the jackal_move_base and velodyne lidar and run the PS3 controller. Since I have not fix the system error, I did the following:
+
+On both jackal and remote pc:
+     
+      $ nano ~/.bashrc
+Add this line:
+      
+      $ source ~jackal_ws/devel/setup.bash
+
+
+      
+
 
 
 
