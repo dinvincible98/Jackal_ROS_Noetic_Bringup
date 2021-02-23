@@ -7,6 +7,8 @@ I recommended preparing a new SSD instead of wiping out the old SSD, this is hel
 
 1. Install Ubuntu 20.04 LTS:
 * Prepare a bootable USB with an Ubuntu 20.04 LTS iso image. Follow the official ubuntu instructions [here](https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu#1-overview).
+* First make sure the jackal is powered off, then insert the USB into the Jackal along with monitor, keyboard and mouse.
+* Wait for Jackal to boot up(It should boot automatically, if it doesn't then follow [instructions] here(https://ubuntu.com/tutorials/install-ubuntu-desktop#4-boot-from-usb-flash-drive))
 * 
 
 
