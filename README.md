@@ -24,8 +24,9 @@ I used router in Northwestern MSR Lab and it is already set up, below are steps 
 * Restarting the router might be necessary for these changes to work.
 * Check that this has worked by connecting to the WiFi and running ifconfig and checking that the IP address of your wireless network interface is what you set it as.
 * To allow for easy hostname resolution, you will want to add these new static IP addresses to the top of your /etc/hosts file.
+
 e.g:
-i. asdjakd
+*** ahdkadh
  
 
 
