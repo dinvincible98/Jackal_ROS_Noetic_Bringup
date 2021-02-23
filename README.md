@@ -20,7 +20,7 @@ I used router in Northwestern MSR Lab and it is already set up, below are steps 
 * Log into the setting of your router. These next steps will vary depending on router. But I will provide the instructions as for a tp-link (TL-WR940N) router.
 * Navigate to the IP & MAC binding tab on your WiFi router
 * Use the MAC address found with ifconfig to bind a desired IP adress to your Jackal (the same can be done with your computer)
-* #### Note: use an IP address starting with 192.168.0.XXX so as not to overlap with the IP address of the Velodyne.
+* [#### Note]: use an IP address starting with 192.168.0.XXX so as not to overlap with the IP address of the Velodyne.
 Restarting the router might be necessary for these changes to work.
 Check that this has worked by connecting to the WiFi and running ifconfig and checking that the IP address of your wireless network interface is what you set it as.
 To allow for easy hostname resolution, you will want to add these new static IP addresses to the top of your /etc/hosts file like so:
