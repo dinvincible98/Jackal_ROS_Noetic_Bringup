@@ -94,9 +94,11 @@ To let your Jackal and PC share a ROS master, you need to set up ROS_MASTER_URI 
 
 Add this file to Jackal:
 * [setup_jackal.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_jackal.bash)
+* #### Note: I sourced my workspace in the bash file for convenience, you should change the last line to your own workspace.
 
 Add this file to remote pc:
 * [setup_laptop.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_laptop.bash)
+* #### Note: I sourced my workspace in the bash file for convenience, you should change the last line to your own workspace.
 * #### Important note: Remeber to source those files whenever you open a new terminal(source setup_jackal.bash if on jackal, source setup_laptop.bash if on remote pc). Or you can add those two files to each's ~/.bashrc if you think it is more conveninent(However if you are not only using Jackal, this way is not recommended).
 #### 7. Final setup for Jackal specifics
 Those are key steps to get Jackal up and running by setting up all undocumented intricates implemented by Clearpath on a Jacakl image.
@@ -137,11 +139,18 @@ On Jackal:
 * Turn on the jackal then remember to press the small red button.
 * Connect remote pc to MSR jackal router
 * SSH into Jackal (ssh jackal@jackal-desktop)
-* In every new terminal on the jackal source setup_jackal.bash
-* In every new terminal on the jackal source setup_laptop.bash
-* On jackal terminal:
+* Make sure you clone this repo to both Jackal and your remote pc
+* In every new terminal on the jackal: source setup_jackal.bash
+* In every new terminal on the remote pc: source setup_laptop.bash
+* On Jackal terminal:
       
-      roslaunch jackal_noetic_bringup
+      $ roslaunch jackal_noetic_bringup velodyne.launch(Bring up VLP-16)
+      $ roslaunch jackal_noetic_bringup slam_toolbox_jackal.launch(Bring up move_base, jackal_base and slam_toolbox)
+
+* On Remote pc:
+      
+      $ roslaunch jackal_noetic_bringup slam_toolbox_pc.launch
+
 
 
 
