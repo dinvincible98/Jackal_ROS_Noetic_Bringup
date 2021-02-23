@@ -86,7 +86,8 @@ Build those pkgs follow the previous instructions, then you can follow the offic
 #### 6. Setting up ROS between Jackal and remote PC
 To let your Jackal and PC share a ROS master, you need to set up ROS_MASTER_URI and ROS_HOSTNAME environment on both Jackal and remote pc.
 Add this file to Jackal:
-* setup_jackal.bash
+* [setup_jackal.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_jackal.bash)
+* [setup_laptop]
 
 
 
