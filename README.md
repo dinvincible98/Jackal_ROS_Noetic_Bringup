@@ -41,7 +41,7 @@ host file on your remote pc:
 
 * Restart your network manager or your whole pc for changes to take affect.
 * Connect to the router and try to ping jackal or SSHing to check if the setup works.
-* #### Note: You need to install openssh_server(run ### sudo apt-get install openssh_server) for ssh to let it work.
+* #### Note: You need to install openssh_server(run sudo apt-get install openssh_server) for ssh to let it work.
 #### 3. Installing ROS Noetic
 * Install ROS Noetic on both of your remoet pc and Jackal. Follow the insturctions [here](http://wiki.ros.org/noetic/Installation/Ubuntu).
 * I recommended to install Desktop-Full Install as shown on the instructions.
@@ -70,6 +70,22 @@ In order to build those pkgs from source:
 
       $ cd jackal_ws
       $ rosdep install --from-paths src --ignore-src -r -y
+
+* In jackal_ws, run catkin_make to build pkgs.
+
+      $ catkin_make
+
+#### 5. Building Jackal packages on remote pc
+Firstly, install all preivous packages on your computer first, then build below packages from source:
+* [jackal_desktop](https://github.com/jackal/jackal_desktop)
+* [jackal_simulator](https://github.com/jackal/jackal_simulator)
+* [hector_gazebo](https://github.com/tu-darmstadt-ros-pkg/hector_gazebo)
+* [hector_models](https://github.com/tu-darmstadt-ros-pkg/hector_models)
+
+Build those pkgs follow the previous instructions, then you can follow the official Jackal [tutorial](https://www.clearpathrobotics.com/assets/guides/kinetic/jackal/simulation.html) and play around.
+
+
+
 
 
 
