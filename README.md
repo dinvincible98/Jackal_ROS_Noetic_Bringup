@@ -83,6 +83,10 @@ Firstly, install all preivous packages on your computer first, then build below 
 * [hector_models](https://github.com/tu-darmstadt-ros-pkg/hector_models)
 
 Build those pkgs follow the previous instructions, then you can follow the official Jackal [tutorial](https://www.clearpathrobotics.com/assets/guides/kinetic/jackal/simulation.html) and play around.
+#### 6. Setting up ROS between Jackal and remote PC
+To let your Jackal and PC share a ROS master, you need to set up ROS_MASTER_URI and ROS_HOSTNAME environment on both Jackal and remote pc.
+Add this file to Jackal:
+* setup_jackal.bash
 
 
 
