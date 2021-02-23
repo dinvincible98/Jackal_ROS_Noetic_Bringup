@@ -96,7 +96,23 @@ Those are key steps to get Jackal up and running by setting up all undocumented 
 * [udev rules](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/51-ros-indigo-jackal-firmware.rules)
 
 Add this file to Jackal. Copying the rules into /etc/udev/rules.d foler on Jackal. Restart the Jackal to let it take affect.
-* #### Note: If this file is not present or not working, the Jackal will not find the motor control board in the /dev folder. 
+* #### Note: If this file is not present or not working, the Jackal will not find the motor control board in the /dev folder.
+* Velodyne 16 setup
+In order to get the VLP-16 lidar work with Jackal, Jackal need to set up to interface with the lidar over the network and some packages are required. The default address for VLP-16 in MSR lab is 192.168.1.201.(It is already set up, so you can ping it to make sure it works)
+
+Required packages:
+
+Use sudo apt-get install  
+* ros-noetic-velodyne-pointcloud
+
+This package contains nodes to read the poincloud data from the velodyne and publish it to the relevant ROS topics.
+* ros-noetic-pointcloud-to-laserscan
+
+This package contains a node to convert 3D point cloud data to a single layer laserscan, which is useful for gmapping or slam_toolbox
+
+* PS3 remote setup
+I have not done set up PS3 controller since there are some intractable porblems due to verison problems.  I skipped this part because it is not necessary for my project. However, it is better to set it up for safety concern.
+
 
 
 
