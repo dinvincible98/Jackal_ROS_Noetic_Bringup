@@ -85,6 +85,7 @@ Firstly, install all preivous packages on your computer first, then build below 
 Build those pkgs follow the previous instructions, then you can follow the official Jackal [tutorial](https://www.clearpathrobotics.com/assets/guides/kinetic/jackal/simulation.html) and play around.
 #### 6. Setting up ROS between Jackal and remote PC
 To let your Jackal and PC share a ROS master, you need to set up ROS_MASTER_URI and ROS_HOSTNAME environment on both Jackal and remote pc.
+
 Add this file to Jackal's ~/.bashrc:
 * [setup_jackal.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_jackal.bash)
 
@@ -104,10 +105,8 @@ In order to get the VLP-16 lidar work with Jackal, Jackal need to set up to inte
 Required packages:
 
 Use sudo apt-get install  
-* ros-noetic-velodyne-pointcloud
-** This package contains nodes to read the poincloud data from the velodyne and publish it to the relevant ROS topics.
-* ros-noetic-pointcloud-to-laserscan
-** This package contains a node to convert 3D point cloud data to a single layer laserscan, which is useful for gmapping or slam_toolbox
+* ros-noetic-velodyne-pointcloud (This package contains nodes to read the poincloud data from the velodyne and publish it to the relevant ROS topics.)
+* ros-noetic-pointcloud-to-laserscan (This package contains a node to convert 3D point cloud data to a single layer laserscan, which is useful for gmapping or slam_toolbox.)
 
 * PS3 remote setup
 I have not done set up PS3 controller since there are some intractable porblems due to verison problems.  I skipped this part because it is not necessary for my project. However, it is better to set it up for safety concern.
