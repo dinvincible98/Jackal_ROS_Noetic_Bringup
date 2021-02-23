@@ -106,10 +106,14 @@ Required packages:
 
 Use sudo apt-get install  
 * ros-noetic-velodyne-pointcloud (This package contains nodes to read the poincloud data from the velodyne and publish it to the relevant ROS topics.)
-* ros-noetic-pointcloud-to-laserscan (This package contains a node to convert 3D point cloud data to a single layer laserscan, which is useful for gmapping or slam_toolbox.)
+* ros-noetic-pointcloud-to-laserscan (This package contains a node to convert 3D point cloud data to a single layer laserscan, which is useful for gmapping and slam_toolbox.)
+
 
 * PS3 remote setup
 I have not done set up PS3 controller since there are some intractable porblems due to verison problems.  I skipped this part because it is not necessary for my project. However, it is better to set it up for safety concern.
+
+
+
 
 
 
