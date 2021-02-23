@@ -1,7 +1,7 @@
 # Clearpath Jackal ROS Noetic Bringup
 ![jackal](https://user-images.githubusercontent.com/70287453/108798093-87bcd680-7552-11eb-943f-d65a9a743770.jpg)
 ## Introduction
-This README contains instructions of bringing up [Clearpath Jackal](https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/) on ROS noetic which is newest verison of ROS. Since many packages used for Jackal are not officially released for ROS noetic, this instruction will guide you how to build and set up jackal from scratch. Thanks for Jordan Haskel, our previous MSR student who wrote the [ROS Melodic(previous verison) bringup](https://github.com/robo-jordo/jackal_melodic_bringup) for Jackal and it helps me a lot in the buidling process.
+This README contains instructions of bringing up [Clearpath Jackal](https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/) on ROS noetic which is newest verison of ROS. Since many packages used for Jackal are not officially released for ROS noetic, this instruction will guide you how to build and set up jackal from scratch. Thanks to Jordan Haskel, our previous MSR student who wrote the [ROS Melodic(previous verison) bringup](https://github.com/robo-jordo/jackal_melodic_bringup) for Jackal and it helps me a lot in the buidling process.
 ## Fresh Start
 I recommended preparing a new SSD instead of wiping out the old SSD, this is helpful for backtracking if you made any mistakes and for debugging.
 #### 1. Installing Ubuntu 20.04 LTS:
@@ -85,10 +85,12 @@ Firstly, install all preivous packages on your computer first, then build below 
 Build those pkgs follow the previous instructions, then you can follow the official Jackal [tutorial](https://www.clearpathrobotics.com/assets/guides/kinetic/jackal/simulation.html) and play around.
 #### 6. Setting up ROS between Jackal and remote PC
 To let your Jackal and PC share a ROS master, you need to set up ROS_MASTER_URI and ROS_HOSTNAME environment on both Jackal and remote pc.
-Add this file to Jackal:
+Add this file to Jackal's ~/.bashrc:
 * [setup_jackal.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_jackal.bash)
-* [setup_laptop]
-
+Add this file to remote pc's ~/.bashrc:
+* [setup_laptop.bash](https://github.com/dinvincible98/Jackal_ROS_Noetic_Bringup/blob/main/setup_laptop.bash)
+* #### Note: Remeber to source those files whenever you open a new terminal(source setup_jackal if on jackal, source setup_laptop if on remote pc)
+#### 7. 
 
 
 
