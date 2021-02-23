@@ -155,7 +155,7 @@ On Jackal:
 ## Demo 
 ### SLAM
 
-
+![jackal_slam](https://user-images.githubusercontent.com/70287453/108808584-8d271a80-756c-11eb-939b-a7d0e586fe40.gif)
 
 
 
