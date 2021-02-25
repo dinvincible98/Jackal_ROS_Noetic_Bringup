@@ -137,7 +137,7 @@ On Jackal:
 
 ## Starting the Jackal(Northwestern MSR Lab)
 * Turn on the jackal then remember to press the small red button.
-* Connect remote pc to MSR jackal router
+* Connect both jackal and remote pc to MSR jackal router
 * SSH into Jackal (ssh jackal@jackal-desktop)
 * Make sure you clone this repo to both Jackal and your remote pc
 * In every new terminal on the jackal: source setup_jackal.bash
