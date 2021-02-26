@@ -81,12 +81,19 @@ In order to build those pkgs from source:
 
       $ catkin_make
 
+Run rosdep to install all dependencies
+
+      $rosdep install --from-paths src --ignore-src -r -y
 #### 5. Building Jackal packages on remote pc
 Firstly, install all preivous packages on your computer first, then build below packages from source:
 * [jackal_desktop](https://github.com/jackal/jackal_desktop)
 * [jackal_simulator](https://github.com/jackal/jackal_simulator)
 * [hector_gazebo](https://github.com/tu-darmstadt-ros-pkg/hector_gazebo)
 * [hector_models](https://github.com/tu-darmstadt-ros-pkg/hector_models)
+
+Run rosdep to install all dependencies
+
+      $rosdep install --from-paths src --ignore-src -r -y
 
 Build those pkgs follow the previous instructions, then you can follow the official Jackal [tutorial](https://www.clearpathrobotics.com/assets/guides/kinetic/jackal/simulation.html) and play around.
 #### 6. Setting up ROS between Jackal and remote PC
